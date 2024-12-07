@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Вход</title>
+		<link rel="stylesheet" href="assets/css/root.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/reg.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="logo">
+				<img src="assets/media/logo.png" class="logo" alt="Logo" />
+			</a>
+			<nav>
+				<a href="search.html">Поиск</a>
+				<a href="personal.html">Личный кабинет</a>
+				<a href="add.html">Добавить</a>
+				<a href="index.html#reviews__sec">Отзывы</a>
+				<a class="log__button" href="register.html">Регистрация</a>
+			</nav>
+		</header>
+		<main>
+			<section class="registration_form__sec">
+				<div class="container">
+					<form action="/registration" method="post" class="registration__form">
+						<h1 class="reg__label">Вход</h1>
+						<span class="error-summary text-danger"
+							>Неверный логин или пароль</span
+						>
+						<div class="input-group">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" name="email" class="input-large" required />
+							<span class="error-message text-danger"
+								>Почта еще не зарегистрирована</span
+							>
+						</div>
+
+						<div class="input-group">
+							<label for="password" class="form-label">Пароль</label>
+							<div class="input-wrapper">
+								<input
+									type="password"
+									name="password"
+									class="input-large"
+									required
+								/>
+							</div>
+							<span class="error-message text-danger"
+								>Введите корректный пароль</span
+							>
+						</div>
+
+						<div class="checkbox-group">
+							<a href="#" class="link">Забыли пароль?</a>
+						</div>
+
+						<div class="button-group">
+							<input type="submit" value="Войти" class="btn" />
+						</div>
+
+						<p class="text-center text-muted">
+							Нет аккаунта?
+							<a href="register.html" class="link">Зарегистрироваться сейчас</a>
+						</p>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="contact">
+				<p class="phone">7989894567854</p>
+				<p class="mail">test@test.ru</p>
+			</div>
+			<nav>
+				<a href="search.html">Главная</a>
+				<a href="search.html">Поиск</a>
+				<a href="register.html">Регистрация</a>
+				<a href="personal.html">Личный кабинет</a>
+				<a href="add.html">Добавить</a>
+				<a href="reviews.html">Отзывы</a>
+			</nav>
+		</footer>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Детали животного</title>
+		<link rel="stylesheet" href="assets/css/root.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/search.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="logo">
+				<img src="assets/media/logo.png" class="logo" alt="Logo" />
+			</a>
+			<nav>
+				<a href="search.html">Поиск</a>
+				<a href="register.html">Регистрация</a>
+				<a href="personal.html">Личный кабинет</a>
+				<a href="add.html">Добавить</a>
+				<a href="index.html#reviews__sec">Отзывы</a>
+				<a class="log__button" href="login.html">Войти</a>
+			</nav>
+		</header>
+		<main>
+			<div class="search-results-page">
+				<div class="search-results-container">
+					<h1 class="search__label">Найденные животные</h1>
+					<form class="search-form">
+						<input type="text" name="animalType" placeholder="Вид животного" />
+						<input type="text" name="district" placeholder="Район" />
+						<input type="date" name="foundDate" placeholder="Дата нахождения" />
+						<button type="submit" class="btn">Поиск</button>
+					</form>
+
+					<div class="animal-detail">
+						<h2 class="detail-title">Найдено животное: Собака</h2>
+
+						<div class="animal-cards">
+							<div class="animal-card">
+								<img src="assets/media/rev/1_review.png" alt="Собака 1" class="animal-card-photo" />
+								<div class="animal-card-info">
+									<h3>Собака</h3>
+									<p>Район: Центральный</p>
+									<p>Дата: 05.12.2024</p>
+								</div>
+							</div>
+							<div class="animal-card">
+								<img src="assets/media/rev/2_review.png" alt="Собака 2" class="animal-card-photo" />
+								<div class="animal-card-info">
+									<h3>Собака</h3>
+									<p>Район: Центральный</p>
+									<p>Дата: 05.12.2024</p>
+								</div>
+							</div>
+							<div class="animal-card">
+								<img src="assets/media/rev/3_review.png" alt="Собака 3" class="animal-card-photo" />
+								<div class="animal-card-info">
+									<h3>Собака</h3>
+									<p>Район: Центральный</p>
+									<p>Дата: 05.12.2024</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="animal-info">
+							<div class="info-item">
+								<span class="label">Имя нашедшего:</span>
+								<span class="value">Иван Иванов</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Контактный номер:</span>
+								<span class="value">+7 900 000 00 00</span>
+							</div>
+							<div class="info-item">
+								<span class="label">E-mail:</span>
+								<span class="value">ivanov@mail.com</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Дополнительная информация:</span>
+								<span class="value"
+									>Собака была найдена возле парка, очень дружелюбная и
+									послушная.</span
+								>
+							</div>
+							<div class="info-item">
+								<span class="label">Клеймо:</span>
+								<span class="value">12345</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Район:</span>
+								<span class="value">Центральный</span>
+							</div>
+							<div class="info-item">
+								<span class="label">Дата нахождения:</span>
+								<span class="value">05 декабря 2024</span>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="contact">
+				<p class="phone">7989894567854</p>
+				<p class="mail">test@test.ru</p>
+			</div>
+			<nav>
+				<a href="search.html">Главная</a>
+				<a href="search.html">Поиск</a>
+				<a href="register.html">Регистрация</a>
+				<a href="personal.html">Личный кабинет</a>
+				<a href="add.html">Добавить</a>
+				<a href="reviews.html">Отзывы</a>
+			</nav>
+		</footer>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

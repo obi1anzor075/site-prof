@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Личный кабинет</title>
+		<link rel="stylesheet" href="assets/css/root.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/personal.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html" class="logo">
+				<img src="assets/media/logo.png" class="logo" alt="Logo" />
+			</a>
+			<nav>
+				<a href="search.html">Поиск</a>
+				<a href="personal.html" class="active">Личный кабинет</a>
+				<a href="add.html">Добавить</a>
+				<a href="index.html#reviews__sec">Отзывы</a>
+				<a class="log__button" href="register.html">Регистрация</a>
+			</nav>
+		</header>
+		<main>
+			<section class="personal_info__sec">
+				<div class="container">
+					<h1 class="sec__title">Личный кабинет</h1>
+					<div class="info__block">
+						<div class="info__item">
+							<strong>Телефон:</strong>
+							<div>
+								+7 (123) 456-78-90
+								<button class="btn btn__edit">Изменить</button>
+							</div>
+						</div>
+						<div class="info__item">
+							<strong>Email:</strong>
+							<div>
+								user@example.com
+								<button class="btn btn__edit">Изменить</button>
+							</div>
+						</div>
+						<div class="info__item">
+							<strong>Добавлено объявлений:</strong>
+							<div>12</div>
+						</div>
+						<div class="info__item">
+							<strong>Вернувшиеся животные:</strong>
+							<div>5</div>
+						</div>
+						<div class="info__item">
+							<strong>Дата регистрации:</strong>
+							<div>01.01.2023</div>
+						</div>
+						<div class="info__item">
+							<strong>Дней с момента регистрации:</strong>
+							<div>340</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ads__sec">
+				<div class="container">
+					<h2 class="sec__title">Мои объявления</h2>
+
+					<div class="ads__group active">
+						<h3 class="ads__group__title">Активно</h3>
+						<div class="ad__card">
+							<img
+								src="assets/media/rev/1_review.png"
+								alt="Фото животного"
+								class="ad__photo"
+							/>
+							<p class="ad__info"><strong>Район:</strong> Центральный</p>
+							<p class="ad__info">
+								<strong>Дата добавления:</strong> 01.12.2023
+							</p>
+							<p class="ad__info">
+								<strong>Информация:</strong> Найден лабрадор, черный, бегал
+								возле парка.
+							</p>
+							<p class="ad__info"><strong>Клеймо:</strong> Есть</p>
+							<div class="ad__actions">
+								<button class="btn btn__edit">Редактировать</button>
+								<button class="btn btn__delete">Удалить</button>
+							</div>
+						</div>
+						<div class="ad__card">
+							<img
+								src="assets/media/rev/2_review.png"
+								alt="Фото животного"
+								class="ad__photo"
+							/>
+							<p class="ad__info"><strong>Район:</strong> Северный</p>
+							<p class="ad__info">
+								<strong>Дата добавления:</strong> 02.12.2023
+							</p>
+							<p class="ad__info">
+								<strong>Информация:</strong> Найдена кошка, серый окрас, на шее
+								ошейник.
+							</p>
+							<p class="ad__info"><strong>Клеймо:</strong> Нет</p>
+							<div class="ad__actions">
+								<button class="btn btn__edit">Редактировать</button>
+								<button class="btn btn__delete">Удалить</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="ads__group moderation">
+						<h3 class="ads__group__title">На модерации</h3>
+						<div class="ad__card">
+							<img
+								src="assets/media/rev/3_review.png"
+								alt="Фото животного"
+								class="ad__photo"
+							/>
+							<p class="ad__info"><strong>Район:</strong> Южный</p>
+							<p class="ad__info">
+								<strong>Дата добавления:</strong> 03.12.2023
+							</p>
+							<p class="ad__info">
+								<strong>Информация:</strong> Найден щенок, белый с пятнами.
+							</p>
+							<p class="ad__info"><strong>Клеймо:</strong> Нет</p>
+							<div class="ad__actions">
+								<button class="btn btn__edit">Редактировать</button>
+								<button class="btn btn__delete">Удалить</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="ads__group found">
+						<h3 class="ads__group__title">Найдено</h3>
+						<div class="ad__card">
+							<img
+								src="assets/media/card/slide.png"
+								alt="Фото животного"
+								class="ad__photo"
+							/>
+							<p class="ad__info"><strong>Район:</strong> Восточный</p>
+							<p class="ad__info">
+								<strong>Дата добавления:</strong> 04.12.2023
+							</p>
+							<p class="ad__info">
+								<strong>Информация:</strong> Найден спаниель возле магазина.
+							</p>
+							<p class="ad__info"><strong>Клеймо:</strong> Есть</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="contact">
+				<p class="phone">+7 (123) 456-78-90</p>
+				<p class="mail">support@example.com</p>
+			</div>
+			<nav>
+				<a href="index.html">Главная</a>
+				<a href="search.html">Поиск</a>
+				<a href="personal.html">Личный кабинет</a>
+				<a href="add.html">Добавить</a>
+				<a href="reviews.html">Отзывы</a>
+			</nav>
+		</footer>
+	</body>
+</html>
