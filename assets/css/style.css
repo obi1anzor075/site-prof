@@ -37,6 +37,10 @@ header {
         filter: invert(100%) sepia(0%) saturate(7488%) hue-rotate(252deg) brightness(99%) contrast(108%);
     }
 
+    & .profile__img{
+        filter:inherit;
+    }
+
     & nav {
         display: flex;
         justify-content: end;
