@@ -29,6 +29,7 @@ header {
         border-radius: 50%;
         width: 55px;
         height: 55px;
+        aspect-ratio: 1/1;
     }
     & img {
         width: 40px;
@@ -475,10 +476,32 @@ footer {
     .slider__sec .slide__block {
         width: 440px !important;
         height: 255px !important;
+
+        & p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 280px;
+        }
     }
 
     .slider__sec .slide__block p,
     .slider__sec .slide__block a {
         font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .slider__sec .slide__block {
+        width: 380px !important;
+        height: 210px !important;
+
+        & p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 280px;
+        }
     }
 }

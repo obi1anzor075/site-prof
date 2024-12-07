@@ -1,13 +1,4 @@
 body {
-    & header {
-        & .logo img {
-            height: 50px;
-        }
-
-        & nav {
-            display: flex;
-            gap: 20px;
-        }
     }
 
     & main {
@@ -148,7 +139,6 @@ body {
 
     @media (max-width: 768px) {
         & header {
-            flex-wrap: wrap;
 
             & nav {
                 display: flex;

@@ -1,169 +1,193 @@
 body {
-    & main {
-        flex: 1;
-        padding: 20px;
-        justify-content: center;
+  & main {
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
 
-        & .search-results-page {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
+    & .search-results-page {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
 
-            & .search-results-container {
-                width: 100%;
-                max-width: 1200px;
-                background-color: #fff;
-                border-radius: 10px;
-                padding: 15px 30px 30px 30px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      & .search-results-container {
+        width: 100%;
+        max-width: 1200px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px 30px 30px 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
-                & .search__label {
-                    font-size: 24px;
-                    text-align: center;
-                    color: #000;
-                    margin-bottom: 15px;
-                }
-
-                & .search-form {
-                    display: flex;
-                    gap: 15px;
-                    margin-bottom: 20px;
-
-                    & input {
-                        flex: 1;
-                        padding: 10px;
-                        border: 1px solid #ccc;
-                        border-radius: 5px;
-                        font-size: 1rem;
-
-                        &:focus {
-                            border-color: #007bff;
-                            outline: none;
-                        }
-                    }
-                }
-
-                & .search-results-table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    margin-bottom: 20px;
-
-                    & th {
-                        color: white;
-                        padding: 10px;
-                        text-align: left;
-                        border-bottom: 1px solid #ddd;
-                    }
-                    & td {
-                        padding: 10px;
-                        text-align: left;
-                        border-bottom: 1px solid #ddd;
-                        color: #000;
-                    }
-
-                    & th {
-                        background-color: var(--secondary-color);
-                        font-weight: bold;
-                    }
-
-                    & img {
-                        max-width: 80px;
-                        border-radius: 5px;
-                    }
-                }
-
-                & .pagination {
-                    display: flex;
-                    justify-content: center;
-                    gap: 5px;
-
-                    & .page-btn {
-                        padding: 10px 15px;
-                        border: none;
-                        background-color: #007bff;
-                        color: #fff;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        font-weight: bold;
-                        transition: background-color 0.3s;
-
-                        &:hover {
-                            background-color: #0056b3;
-                        }
-                    }
-                }
-            }
+        & .search__label {
+          font-size: 24px;
+          text-align: center;
+          color: #000;
+          margin-bottom: 15px;
         }
-    }
 
-    @media (max-width: 768px) {
-        & main .search-results-container {
-            padding: 20px;
+        & .search-form {
+          display: flex;
+          gap: 15px;
+          margin-bottom: 20px;
 
-            & .search-form {
-                flex-direction: column;
+          & input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+
+            &:focus {
+              border-color: #007bff;
+              outline: none;
             }
-
-            & .search-results-table {
-                font-size: 0.9rem;
-
-                & img {
-                    max-width: 60px;
-                }
-            }
+          }
         }
+
+        & .search-results-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+
+          & th {
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+          }
+          & td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            color: #767676;
+          }
+
+          & th {
+            background-color: var(--secondary-color);
+            font-weight: bold;
+          }
+
+          & img {
+            max-width: 150px;
+            border-radius: 5px;
+          }
+        }
+
+        & .pagination {
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+
+          & .page-btn {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+        }
+      }
     }
+  }
+
+  @media screen and (max-width: 900px) {
+    .search-results-table {
+      & th {
+        display: none;
+      }
+      & tr{
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      & td {
+        display: block;
+        text-align: right;
+      }
+
+      & td::before{
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    & main .search-results-container {
+      padding: 20px;
+
+      & .search-form {
+        flex-direction: column;
+      }
+
+      & .search-results-table {
+        font-size: 0.9rem;
+
+        & img {
+          max-width: 160px;
+        }
+      }
+    }
+  }
 }
 
 /* Контейнер для карточек */
 .animal-cards {
-    display: grid; /* Сетка для карточек */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматические столбцы */
-    gap: 16px; /* Расстояние между карточками */
-    padding: 16px;
-    justify-content: center;
+  display: grid; /* Сетка для карточек */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Автоматические столбцы */
+  gap: 16px; /* Расстояние между карточками */
+  padding: 16px;
+  justify-content: center;
 }
 
 /* Стили карточки */
 .animal-card {
-    background-color: #fff; /* Белый фон */
-    border: 1px solid #ddd; /* Тонкая рамка */
-    border-radius: 8px; /* Скругленные углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
-    overflow: hidden; /* Скрываем излишки */
-    transition:
-        transform 0.2s,
-        box-shadow 0.2s; /* Анимация на наведение */
+  background-color: #fff; /* Белый фон */
+  border: 1px solid #ddd; /* Тонкая рамка */
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  overflow: hidden; /* Скрываем излишки */
+  transition: transform 0.2s, box-shadow 0.2s; /* Анимация на наведение */
 }
 
 /* Анимация при наведении */
 .animal-card:hover {
-    transform: translateY(-5px); /* Поднятие карточки */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
+  transform: translateY(-5px); /* Поднятие карточки */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
 }
 
 /* Фото внутри карточки */
 .animal-card-photo {
-    width: 100%; /* Изображение на всю ширину карточки */
-    height: 150px; /* Фиксированная высота */
-    object-fit: cover; /* Сохранение пропорций */
-    border-bottom: 1px solid #ddd; /* Разделение фото и текста */
+  width: 100%; /* Изображение на всю ширину карточки */
+  height: 150px; /* Фиксированная высота */
+  object-fit: cover; /* Сохранение пропорций */
+  border-bottom: 1px solid #ddd; /* Разделение фото и текста */
 }
 
 /* Информация под фото */
 .animal-card-info {
-    padding: 12px; /* Внутренние отступы */
-    text-align: center; /* Центрирование текста */
+  padding: 12px; /* Внутренние отступы */
+  text-align: center; /* Центрирование текста */
 }
 
 .animal-card-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
 }
 
 .animal-card-info p {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 4px 0;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 4px 0;
 }
