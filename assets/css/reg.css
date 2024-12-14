@@ -106,8 +106,3 @@
     color: #dc3545;
     font-size: 1.1rem;
 }
-@media screen and (max-width:768px) {
-    .registration__form{
-        width: 95% !important;
-    }
-}
