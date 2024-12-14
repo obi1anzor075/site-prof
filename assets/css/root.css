@@ -99,6 +99,10 @@ section {
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
 .sec__title {
   width: 100%;
   font-size: 30px;
